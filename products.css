@@ -1,0 +1,291 @@
+
+
+body{
+    /* background-color: #575353; */
+    display: grid;
+    grid-template-columns:2fr 2fr 1fr;
+    grid-template-rows:100px 150px 200px 400px 400px 400px 400px 400px 400px 250px;
+    grid-template-areas:  "nav nav nav  " "mix mix mix""head head head" "pict1 pict2 pict3" "pict4 pict5 pict6" "pict7 pict8 pict9" 
+    "pict10 pict11 pict12" "pict13 pict14 pict15" "pict16 pict17 pict18 ""foot foot foot";
+  }
+
+                             * {
+                                box-sizing: border-box;
+                              }
+                              
+                              /* body {
+                                margin: 0;
+                                font-family: Arial;
+                              } */
+                              
+                              /* .header {
+                                text-align: center;
+                                padding: 32px;
+                              } */
+                              
+                              /* Create two equal columns that floats next to each other */
+                              .column {
+                                float: left;
+                                width: 50%;
+                                padding: 10px;
+                              }
+                              
+                              .column img {
+                                margin-top: 12px;
+
+                              }
+
+
+                              
+                              /* Clear floats after the columns */
+                              .row:after {
+                                content: "";
+                                display: table;
+                                clear: both;
+                              }
+
+ 
+    /* img{
+        width: 98%;
+        height: auto;} */
+    /* div.artical{
+        width: 100%;
+        height: 100%;} */
+        #top{
+          background-color: black;
+          height: 70px;
+          width: 100%;
+      grid-area: nav;
+      display: flex;
+      justify-content: space-between;
+      
+      
+      
+      
+      
+      
+          }
+            .header{
+              grid-area:mix;
+              /* border-color: black 2px solid; */
+              display: flex;
+              justify-content: center;
+              flex-basis: 10%;
+              padding-top: 17px;
+          /* margin-top: 40px; */
+          text-align: center;
+              padding: 32px;
+         margin-bottom: 70px;
+       
+            }
+
+ 
+          
+               
+         
+            .l{
+              font-size:x-large;
+              padding:1px;
+              width: 2%;
+              height: 12px;
+              background-color:rgb(255, 255, 255);
+          }
+            a{text-decoration: none;
+           
+            }
+            .h{
+                font-size: x-large;
+                padding:6px;
+                padding-top: 1px;
+                width: 9%;
+                height: 12px;
+                margin-left: 4px;
+                margin-right: 4px;
+                padding-bottom: 6px;
+                background-color:rgb(255, 255, 255);
+            text-align: center;
+          }
+      
+       
+        /* .h:hover feColorMatrix{
+          border-bottom: 2px solid #000;
+      
+          }
+          .col{
+          
+              border: 3pxs solid black;
+          
+              color: black;} */
+              * {box-sizing: border-box;}
+
+              .container {
+                position: relative;
+                width: 50%;
+                max-width: 300px;
+              }
+              
+              .image {
+                display: block;
+                width: 100%;
+                height: auto;
+              }
+              
+              .overlay {
+                position: absolute; 
+                bottom: 0; 
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, 0.5); /* Black see-through */
+                color: #f1f1f1; 
+                width: 100%;
+                transition: .5s ease;
+                opacity:0;
+                color: white;
+                font-size: 20px;
+                padding: 20px;
+                text-align: center;
+              }
+              
+              .container:hover .overlay {
+                opacity: 1;
+              }
+              #a0{
+/* height:1px; */
+height: 70%px;
+width: 30%;
+grid-area: head;
+              }
+              #number{
+                /* margin-top: 40px; */
+                color: white;
+              margin-left:950px;
+                }
+/* #artical1{
+position: relative;
+display: flex;
+width: 320px;
+height: 30px;
+
+} */
+ /* #artical1 img {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: black;
+padding: 35px;
+display: none;
+text-align: center;
+font-size: 130%;
+
+
+
+} */
+#artical1{
+display: block;
+
+}
+#a0{
+float:l;
+text-align: center;
+font-size:1.6em;
+color: rgb(115, 85, 100);
+margin-right: 500px;
+margin-top: 4px;
+}
+h2 {
+  text-align: center;
+  font-size: 1.6em;
+  color: rgb(115, 85, 100);
+}
+#artical1,#artical2,#artical3{
+  margin-top: 40px;
+}
+#foot{
+
+  grid-area: foot;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+background-color: black;
+  opacity: 0.8;
+  padding: 2em 0 1em;
+  width: 100%;
+  height: 13em;
+  box-sizing: border-box;
+  margin-top: 90px;
+
+}
+footer div p {
+  font-size: 1.1em;
+  text-align: end;
+  color:white
+}
+
+/* footer div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1vh;
+  margin: 1vh;
+
+
+} */
+/* #shop{
+display: block;
+width: 100%;
+
+} */
+img.i{
+  margin-right: 225px;
+}
+div{
+  margin-left: 80px;
+}
+
+
+
+
+
+#icon {
+  /* margin-left: 150px; */
+  
+  }
+  #phone icon{
+    /* margin-bottom: 0em; */
+    background-color: blue;
+ }
+ p {
+  text-align: justify;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media(max-width: 600px){
+#shop{
+display: none;
+width: 50%;
+
+}
+#a0{
+margin-left: 80px;
+
+
+
+}
+#a0{
+height: 70%;
+
+}
+
+
+
+
+
+h2{
+margin-left: 120%;
+
+}
+
+
+
+}
+
